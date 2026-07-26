@@ -1,26 +1,8 @@
 import { motion } from 'motion/react';
-import { Mail, Phone, Linkedin, Github, Send } from 'lucide-react';
-import { Button } from './ui/button';
-import { Input } from './ui/input';
-import { Textarea } from './ui/textarea';
-import { useState } from 'react';
+import { Mail, Phone, Linkedin, Github } from 'lucide-react';
 import { NeuralNetworkCanvas } from './NeuralNetworkCanvas';
 
 export function ContactSection() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission (could integrate with email service)
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I will get back to you soon.');
-    setFormData({ name: '', email: '', message: '' });
-  };
-
   const contactInfo = [
     {
       icon: Phone,
@@ -78,7 +60,7 @@ export function ContactSection() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="max-w-3xl mx-auto">
           {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -124,61 +106,6 @@ export function ContactSection() {
             </div>
           </motion.div>
 
-          {/* Contact Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="backdrop-blur-md bg-white/5 p-8 rounded-2xl border border-white/10">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="text-white/80 text-sm mb-2 block">Name</label>
-                  <Input
-                    type="text"
-                    required
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="bg-white/5 border-white/20 text-white placeholder:text-white/40 focus:border-[#00E5FF] backdrop-blur-md"
-                    placeholder="Your name"
-                  />
-                </div>
-
-                <div>
-                  <label className="text-white/80 text-sm mb-2 block">Email</label>
-                  <Input
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="bg-white/5 border-white/20 text-white placeholder:text-white/40 focus:border-[#00E5FF] backdrop-blur-md"
-                    placeholder="your.email@example.com"
-                  />
-                </div>
-
-                <div>
-                  <label className="text-white/80 text-sm mb-2 block">Message</label>
-                  <Textarea
-                    required
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="bg-white/5 border-white/20 text-white placeholder:text-white/40 focus:border-[#00E5FF] backdrop-blur-md min-h-[150px]"
-                    placeholder="Your message..."
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-[#00E5FF] to-[#7B61FF] hover:opacity-90 text-white py-6 text-lg group relative overflow-hidden"
-                >
-                  <span className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
-                  <Send className="mr-2 h-5 w-5 relative z-10" />
-                  <span className="relative z-10">Send Message</span>
-                </Button>
-              </form>
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>
