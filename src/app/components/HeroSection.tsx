@@ -17,9 +17,9 @@ export function HeroSection() {
     const steps = 60;
     const interval1 = setInterval(() => {
       setCount1((prev) => {
-        if (prev >= 5) {
+        if (prev >= 6) {
           clearInterval(interval1);
-          return 5;
+          return 6;
         }
         return prev + 1;
       });

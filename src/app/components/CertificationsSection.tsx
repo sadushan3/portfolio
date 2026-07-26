@@ -28,6 +28,11 @@ export function CertificationsSection() {
       provider: "Greating Learning",
       color: "#7B61FF",
     },
+    {
+      title: "Advanced AI and ML Algorithms",
+      provider: "Packt",
+      color: "#00FFB3",
+    },
   ];
 
   return (

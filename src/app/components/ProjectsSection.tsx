@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Rocket, ChevronRight } from 'lucide-react';
+import { Rocket, ChevronRight, Github, ExternalLink } from 'lucide-react';
 import { useState } from 'react';
 
 export function ProjectsSection() {
@@ -80,6 +80,21 @@ export function ProjectsSection() {
       ],
       gradient: "from-[#7B61FF] to-[#00FFB3]",
       color: "#7B61FF",
+    },
+    {
+      title: "Face Detection AI",
+      description: "Lightweight real-time face detection for images and live video streams using OpenCV",
+      features: [
+        "Python",
+        "OpenCV",
+        "Haar Cascade Classifier",
+        "Real-Time Detection",
+        "Webcam Support",
+        "Customizable Models",
+      ],
+      gradient: "from-[#00FFB3] to-[#00E5FF]",
+      color: "#00FFB3",
+      githubUrl: "https://github.com/sadushan3/Face_Recognition",
     },
   ];
 
@@ -181,6 +196,20 @@ export function ProjectsSection() {
                       ))}
                     </div>
                   </div>
+
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-7 inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-4 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:border-white/30 hover:bg-white/10"
+                      aria-label={`View ${project.title} on GitHub`}
+                    >
+                      <Github className="h-4 w-4" style={{ color: project.color }} />
+                      View on GitHub
+                      <ExternalLink className="h-3.5 w-3.5 text-white/60" />
+                    </a>
+                  )}
                 </div>
               </div>
 
