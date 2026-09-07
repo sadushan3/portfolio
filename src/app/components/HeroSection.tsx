@@ -119,7 +119,7 @@ export function HeroSection() {
               transition={{ delay: 0.4 }}
               className="text-2xl md:text-3xl text-white/80 mb-6"
             >
-              Machine Learning Engineer | Data Scientist | AI Developer
+              Machine Learning Engineer | Data Scientist | Software Engineer
             </motion.h2>
 
             <motion.p
@@ -128,7 +128,7 @@ export function HeroSection() {
               transition={{ delay: 0.5 }}
               className="text-white/60 text-lg mb-8 leading-relaxed max-w-2xl"
             >
-              Aspiring Machine Learning Engineer passionate about applying Data Science and Artificial Intelligence to solve real-world problems. Skilled in Python, Machine Learning, Deep Learning, Data Analysis, SQL, REST APIs, Git, Generative AI, LLMs, Prompt Engineering, and Retrieval-Augmented Generation (RAG). Experienced with Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, and AWS Cloud Services. Continuously learning MLOps, LLMOps, and Agentic AI.
+              Final-year Data Science undergraduate at SLIIT working across machine learning and the full stack. I build production-minded data pipelines, APIs, and user interfaces, with hands-on experience in predictive maintenance, edge model optimization, Generative AI, and scalable software systems.
             </motion.p>
 
             <motion.div

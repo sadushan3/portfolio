@@ -7,8 +7,8 @@ export function ProjectsSection() {
 
   const projects = [
     {
-      title: "Explainable Turbofan Engine Health Monitoring System",
-      description: "Advanced anomaly detection system for aircraft engines using explainable AI",
+      title: "Anomaly & Health Monitoring for Turbofan Engines",
+      description: "Explainable predictive-maintenance framework built on NASA C-MAPSS turbofan data",
       features: [
         "NASA C-MAPSS Dataset",
         "LSTM Digital Twin",
@@ -16,85 +16,101 @@ export function ProjectsSection() {
         "LSTM Autoencoder",
         "Explainable AI",
         "Root Cause Analysis",
-        "Sensor Monitoring Dashboard",
+        "GMM",
+        "K-Means",
+        "Root Cause Analysis",
+        "Anomaly Visualisation",
       ],
       gradient: "from-[#00E5FF] to-[#7B61FF]",
       color: "#00E5FF",
     },
     {
-      title: "RAG AI Document Analyzer",
-      description: "Intelligent PDF querying system with context-aware responses",
+      title: "Hybrid RAG Assistant",
+      description: "Grounded document assistant with retrieval evaluation, page-level citations, and refusal control",
       features: [
         "FastAPI",
-        "LangChain",
         "FAISS",
-        "Hugging Face",
-        "Sentence Transformers",
-        "PDF Intelligence",
-        "Semantic Search",
-        "LLM Powered Responses",
+        "BM25",
+        "MiniLM Embeddings",
+        "Cross-Encoder Reranking",
+        "FastAPI + React",
+        "Hit@1 1.00 / MRR 1.00",
       ],
       gradient: "from-[#7B61FF] to-[#00FFB3]",
       color: "#7B61FF",
     },
     {
-      title: "Climate Policy Analysis System",
-      description: "NLP-based system for analyzing and comparing climate policies",
+      title: "Climate Policy Analysis Agent",
+      description: "Multi-document NLP system for semantic comparison, structured extraction, and grounded summaries",
       features: [
         "NLP",
-        "NER",
-        "Policy Comparison",
-        "Similarity Scoring",
-        "Recommendation Engine",
-        "PDF & Word Support",
+        "Hungarian Matching",
+        "Zero-Shot Classification",
+        "Confidence Scoring",
+        "Map-Reduce Summarization",
+        "Precision / Recall / F1",
+        "Docker Compose + CI/CD",
       ],
       gradient: "from-[#00FFB3] to-[#00E5FF]",
       color: "#00FFB3",
     },
     {
-      title: "IoT Smart Parking System",
-      description: "ML-powered parking management with real-time monitoring",
+      title: "IoT Parking System",
+      description: "ML pipeline for occupancy analysis, forecasting, anomaly detection, and TinyML edge inference",
       features: [
-        "Arduino",
-        "Ultrasonic Sensors",
-        "IR Sensors",
-        "Machine Learning Predictions",
-        "Clustering",
-        "Anomaly Detection",
-        "Dashboard Monitoring",
+        "Temporal Trend Modeling",
+        "TinyML",
+        "TensorFlow Lite",
+        "Status Classification",
+        "Regression Forecasting",
+        "Node.js + React",
       ],
       gradient: "from-[#00E5FF] to-[#7B61FF]",
       color: "#00E5FF",
     },
     {
-      title: "Netflix Data Analysis Project",
-      description: "Comprehensive EDA and visualization of Netflix content trends",
+      title: "Workshop Management",
+      description: "Full-stack vehicle service management system for job cards, invoicing, and workflow operations",
       features: [
-        "EDA",
-        "Data Cleaning",
-        "Data Visualization",
-        "Storytelling",
-        "Pandas",
-        "Matplotlib",
-        "Seaborn",
+        "Next.js 15",
+        "TypeScript",
+        "PostgreSQL + Prisma",
+        "Auth.js",
+        "Layered Architecture",
+        "330+ Tests + Playwright",
+        "Audit Trails",
       ],
       gradient: "from-[#7B61FF] to-[#00FFB3]",
       color: "#7B61FF",
     },
     {
-      title: "Face Detection AI",
-      description: "Lightweight real-time face detection for images and live video streams using OpenCV",
+      title: "BusTiker - Bus Seat Reservation System",
+      description: "Concurrency-safe Jakarta EE booking platform rebuilt with a strict layered architecture",
       features: [
-        "Python",
-        "OpenCV",
-        "Haar Cascade Classifier",
-        "Real-Time Detection",
-        "Webcam Support",
-        "Customizable Models",
+        "Jakarta EE",
+        "Concurrency-Safe Reservations",
+        "SQL Injection Remediation",
+        "IDOR / CSRF / XSS Fixes",
+        "Servlet -> Service -> DAO",
+        "HikariCP",
       ],
       gradient: "from-[#00FFB3] to-[#00E5FF]",
       color: "#00FFB3",
-      githubUrl: "https://github.com/sadushan3/Face_Recognition",
+    },
+    {
+      title: "AppointFlow",
+      description: "Multi-tenant appointment SaaS platform built with Clean Architecture and CQRS",
+      features: [
+        "ASP.NET Core",
+        "Clean Architecture",
+        "CQRS",
+        "EF Core Global Filters",
+        "Tenant Data Isolation",
+        "Optimistic Concurrency",
+        "Double-Booking Prevention",
+      ],
+      gradient: "from-[#7B61FF] to-[#00FFB3]",
+      color: "#7B61FF",
     },
   ];
 
@@ -114,10 +130,10 @@ export function ProjectsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-white to-[#00FFB3] bg-clip-text text-transparent">
-            Featured AI Projects
+            Featured AI & Software Projects
           </h2>
           <p className="text-white/60 text-lg max-w-2xl mx-auto">
-            Cutting-edge machine learning and AI solutions
+            Machine learning systems, grounded AI applications, and production-ready software
           </p>
         </motion.div>
 

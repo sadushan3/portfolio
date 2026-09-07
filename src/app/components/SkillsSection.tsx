@@ -4,46 +4,52 @@ import { Code, Brain, Database, Cloud, Globe, Palette } from 'lucide-react';
 export function SkillsSection() {
   const skillCategories = [
     {
-      title: "Programming",
+      title: "Programming Languages",
       icon: Code,
       color: "#00E5FF",
-      skills: ["Python", "R", "Java", "C", "C++", "Kotlin"],
+      skills: ["Python", "R", "Java", "C", "C++", "Kotlin", "JavaScript", "TypeScript"],
     },
     {
       title: "Machine Learning",
       icon: Brain,
       color: "#7B61FF",
-      skills: ["Scikit-learn", "TensorFlow", "PyTorch", "Pandas", "NumPy"],
+      skills: ["Scikit-learn", "TensorFlow", "PyTorch", "Pandas", "NumPy", "Keras"],
     },
     {
       title: "Generative AI",
       icon: Brain,
       color: "#00FFB3",
-      skills: ["LLMs", "Prompt Engineering", "RAG", "LangChain", "Transformers", "FAISS"],
+      skills: ["LLMs", "Prompt Engineering", "RAG", "LangChain", "Transformers", "FAISS", "BM25"],
     },
     {
       title: "Data Analytics",
       icon: Database,
       color: "#00E5FF",
-      skills: ["Power BI", "Excel", "SQL", "Data Visualization"],
+      skills: ["Power BI", "Excel", "SQL", "Data Cleaning", "ETL", "Data Visualization"],
     },
     {
       title: "Web Development",
       icon: Globe,
       color: "#7B61FF",
-      skills: ["MERN Stack", "Spring Boot", "REST APIs"],
+      skills: ["MERN Stack", "Spring Boot", "Django", "ASP.NET Core", "REST APIs", "React Native"],
     },
     {
       title: "Cloud & DevOps",
       icon: Cloud,
       color: "#00FFB3",
-      skills: ["AWS", "Git", "MLOps", "LLMOps"],
+      skills: ["AWS", "Git", "Docker", "MLOps", "LLMOps", "CI/CD"],
     },
     {
       title: "UI/UX",
       icon: Palette,
       color: "#00E5FF",
       skills: ["Figma", "Draw.io"],
+    },
+    {
+      title: "Databases & Architecture",
+      icon: Database,
+      color: "#7B61FF",
+      skills: ["PostgreSQL", "MongoDB", "Firebase", "Supabase", "Prisma", "EF Core", "CQRS"],
     },
   ];
 

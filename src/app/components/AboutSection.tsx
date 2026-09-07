@@ -11,8 +11,8 @@ export function AboutSection() {
     },
     {
       title: "BCS Higher Education Qualification (HEQ)",
-      institution: "Live College",
-      period: "BCS First Stage Completed",
+      institution: "Live College · The Chartered Institute for IT",
+      period: "First Stage Completed · 2023",
       color: "#7B61FF",
     },
     {

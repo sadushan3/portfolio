@@ -5,15 +5,12 @@ export function ExperienceSection() {
   const experiences = [
     {
       company: "HSBC",
-      role: "Data Analyst Intern",
-      period: "08/2025 – 02/2026",
+      role: "Intern - Data Analyst",
+      period: "Aug 2025 – Feb 2026",
       responsibilities: [
-        "Data extraction, cleaning and validation",
-        "Power BI and Excel dashboards",
-        "Process automation using Excel Macros",
-        "Python-based customer data matching",
-        "Account transfer and eligibility analysis",
-        "Business reporting and visualization",
+        "Performed data extraction, cleaning, validation, and customer data matching using Python and Excel",
+        "Developed Power BI and Excel dashboards to analyze department performance and work quality",
+        "Automated email workflows and customer identification using Excel Macros and Python",
       ],
       color: "#00E5FF",
     },
@@ -30,14 +27,12 @@ export function ExperienceSection() {
       color: "#7B61FF",
     },
     {
-      company: "Course Consultant",
+      company: "Eclub",
       role: "Course Consultant Officer",
-      period: "08/2021 – 02/2022",
+      period: "Aug 2021 – Feb 2022",
       responsibilities: [
         "Conducted workshops",
-        "Promoted e-learning programs",
-        "Managed social media awareness campaigns",
-        "Increased student participation",
+        "Helped students gain practical, hands-on skills through interactive sessions",
       ],
       color: "#00FFB3",
     },

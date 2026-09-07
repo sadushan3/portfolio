@@ -4,32 +4,32 @@ import { Award } from 'lucide-react';
 export function CertificationsSection() {
   const certifications = [
     {
-      title: "AWS Educate – Introduction to PartyRock",
+      title: "Introduction to PartyRock",
       provider: "AWS Educate",
       color: "#00E5FF",
     },
     {
-      title: "AWS Educate – Introduction to Generative AI",
+      title: "Introduction to Generative AI",
       provider: "AWS Educate",
       color: "#7B61FF",
     },
     {
       title: "IBM Data Analyst",
-      provider: "IBM / Udemy",
+      provider: "Udemy",
       color: "#00FFB3",
     },
     {
       title: "IBM Machine Learning with Python",
-      provider: "IBM / Coursera",
+      provider: "Coursera",
       color: "#00E5FF",
     },
     {
       title: "Prompt Engineering",
-      provider: "Greating Learning",
+      provider: "Great Learning",
       color: "#7B61FF",
     },
     {
-      title: "Advanced AI and ML Algorithms",
+      title: "Advanced ML Algorithms & Unsupervised Learning",
       provider: "Packt",
       color: "#00FFB3",
     },
