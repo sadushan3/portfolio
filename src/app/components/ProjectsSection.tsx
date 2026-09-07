@@ -23,6 +23,7 @@ export function ProjectsSection() {
       ],
       gradient: "from-[#00E5FF] to-[#7B61FF]",
       color: "#00E5FF",
+      githubUrl: "https://github.com/search?q=user%3Asadushan3+turbofan&type=repositories",
     },
     {
       title: "Hybrid RAG Assistant",
@@ -38,6 +39,7 @@ export function ProjectsSection() {
       ],
       gradient: "from-[#7B61FF] to-[#00FFB3]",
       color: "#7B61FF",
+      githubUrl: "https://github.com/search?q=user%3Asadushan3+hybrid-rag-assistant&type=repositories",
     },
     {
       title: "Climate Policy Analysis Agent",
@@ -53,6 +55,7 @@ export function ProjectsSection() {
       ],
       gradient: "from-[#00FFB3] to-[#00E5FF]",
       color: "#00FFB3",
+      githubUrl: "https://github.com/search?q=user%3Asadushan3+Climate_Policy_Analysis_Agent&type=repositories",
     },
     {
       title: "IoT Parking System",
@@ -67,6 +70,7 @@ export function ProjectsSection() {
       ],
       gradient: "from-[#00E5FF] to-[#7B61FF]",
       color: "#00E5FF",
+      githubUrl: "https://github.com/search?q=user%3Asadushan3+IOT_Parking_System&type=repositories",
     },
     {
       title: "Workshop Management",
@@ -82,6 +86,7 @@ export function ProjectsSection() {
       ],
       gradient: "from-[#7B61FF] to-[#00FFB3]",
       color: "#7B61FF",
+      githubUrl: "https://github.com/search?q=user%3Asadushan3+Workshop+Management&type=repositories",
     },
     {
       title: "BusTiker - Bus Seat Reservation System",
@@ -96,6 +101,7 @@ export function ProjectsSection() {
       ],
       gradient: "from-[#00FFB3] to-[#00E5FF]",
       color: "#00FFB3",
+      githubUrl: "https://github.com/search?q=user%3Asadushan3+BusTiker&type=repositories",
     },
     {
       title: "AppointFlow",
@@ -111,6 +117,7 @@ export function ProjectsSection() {
       ],
       gradient: "from-[#7B61FF] to-[#00FFB3]",
       color: "#7B61FF",
+      githubUrl: "https://github.com/search?q=user%3Asadushan3+AppointFlow&type=repositories",
     },
   ];
 
