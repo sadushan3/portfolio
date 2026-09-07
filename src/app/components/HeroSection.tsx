@@ -3,7 +3,8 @@ import { Download, Linkedin, Github, Mail } from 'lucide-react';
 import { Button } from './ui/button';
 import { useEffect, useState } from 'react';
 import profileImage from '../../imports/image.png';
-import cvFile from '../../imports/Updated_CV.pdf';
+import aiMlCvFile from '../../imports/AIML CV.pdf';
+import softwareEngineeringCvFile from '../../imports/software engineering.pdf';
 import { NeuralNetworkCanvas } from './NeuralNetworkCanvas';
 
 export function HeroSection() {
@@ -63,10 +64,10 @@ export function HeroSection() {
     };
   }, []);
 
-  const handleDownloadCV = () => {
+  const handleDownloadCV = (file: string, filename: string) => {
     const link = document.createElement('a');
-    link.href = cvFile;
-    link.download = 'Sadurshan_CV.pdf';
+    link.href = file;
+    link.download = filename;
     link.click();
   };
 
@@ -138,12 +139,21 @@ export function HeroSection() {
               className="flex flex-wrap gap-4 mb-12"
             >
               <Button
-                onClick={handleDownloadCV}
+                onClick={() => handleDownloadCV(aiMlCvFile, 'Sadurshan_AI_ML_CV.pdf')}
                 className="bg-gradient-to-r from-[#00E5FF] to-[#7B61FF] hover:opacity-90 text-white px-8 py-6 text-lg group relative overflow-hidden"
               >
                 <span className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
                 <Download className="mr-2 h-5 w-5 relative z-10" />
-                <span className="relative z-10">Download CV</span>
+                <span className="relative z-10">AI/ML CV</span>
+              </Button>
+
+              <Button
+                onClick={() => handleDownloadCV(softwareEngineeringCvFile, 'Sadurshan_Software_Engineering_CV.pdf')}
+                variant="outline"
+                className="border-[#7B61FF] text-[#B8A9FF] hover:bg-[#7B61FF]/10 px-8 py-6 text-lg backdrop-blur-sm"
+              >
+                <Download className="mr-2 h-5 w-5" />
+                Software CV
               </Button>
 
               <a href="#contact">
